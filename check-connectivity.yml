@@ -5,3 +5,6 @@
   tasks:
     - name: Verify connectivity
       ansible.builtin.ping:
+    - name: Display confirmation
+      debug:
+        msg: "Connectivity check for {{ inventory_hostname }} success"
